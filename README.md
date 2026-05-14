@@ -43,6 +43,9 @@ chmod +x gogear-sync.sh
 ./gogear-sync.sh
 
 ```
+## 🤖 Acknowledgments
+
+This project was vibe coded. I defined the logic, hardware constraints, and requirements, while AI assisted with generating the bash syntax.
 
 ## License
 
