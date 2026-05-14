@@ -2,8 +2,6 @@
 
 A multithreaded GUI tool for Linux that converts and sanitizes modern FLAC libraries into a format perfectly tailored for vintage Philips GoGear MP3 players.
 
-If you own an older MP3 player, you likely know the struggle: they don't support FLAC, they crash if file names contain certain characters (like parentheses), and their firmware chokes on modern ID3v2.4 tags or high-resolution embedded album art.
-
 This tool provides a simple UI to automatically batch-convert, sanitize, and structure your library safely.
 
 ## ✨ Features
