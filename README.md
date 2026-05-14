@@ -38,10 +38,9 @@ Once installed, simply open your app launcher and search for **GoGear Audio Sync
 If you prefer not to install the desktop shortcut, you can simply download the main script and run it from your terminal:
 
 ```bash
-wget (https://raw.githubusercontent.com/putofixe67/gogear-sync/main/gogear-sync.sh)
+wget https://raw.githubusercontent.com/putofixe67/gogear-sync/main/gogear-sync.sh
 chmod +x gogear-sync.sh
 ./gogear-sync.sh
-
 ```
 ## 🤖 Acknowledgments
 
