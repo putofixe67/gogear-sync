@@ -27,7 +27,7 @@ sudo apt update && sudo apt install zenity ffmpeg eyed3 parallel
 To install the tool and automatically add it to your desktop Application Menu, run this single command in your terminal:
 
 ```bash
-bash -c "$(curl -fsSL [https://raw.githubusercontent.com/putofixe67/gogear-sync/main/install.sh](https://raw.githubusercontent.com/putofixe67/gogear-sync/main/install.sh))"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/putofixe67/gogear-sync/main/install.sh)"
 
 ```
 
