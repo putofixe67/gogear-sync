@@ -18,9 +18,14 @@ error_exit() {
 trap 'error_exit "Conversion aborted by user"' INT TERM HUP
 
 # ----- 1. Dependency Check -----
+if command -v dnf &>/dev/null; then
+    PKG_HINT="sudo dnf install zenity ffmpeg-free python3-eyed3"
+else
+    PKG_HINT="sudo apt install zenity ffmpeg eyed3"
+fi
 for cmd in zenity ffmpeg ffprobe eyeD3; do
     if ! command -v "$cmd" &>/dev/null; then
-        error_exit "Missing required program: $cmd\n\nInstall with:\nsudo apt install zenity ffmpeg eyed3"
+        error_exit "Missing required program: $cmd\n\nInstall with:\n$PKG_HINT"
     fi
 done
 
