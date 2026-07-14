@@ -7,9 +7,9 @@ This tool provides a simple UI to automatically batch-convert, sanitize, and str
 ## ✨ Features
 
 * **GoGear-Ready Tags:** Forces strict `ID3v2.3` with `UTF-16` encoding, which is required for many older hardware players to read metadata correctly.
-* **Deep Filename Sanitization:** Automatically removes parentheses `()` and their inner content, strips Windows-prohibited characters, and trims trailing spaces to prevent file-system crashes on FAT32 players.
+* **Deep Filename Sanitization:** Automatically removes parentheses `()` and their inner content, strips Windows-prohibited characters, transliterates accented characters to plain ASCII (`ö` → `o`, `é` → `e`, `ç` → `c`), and trims trailing spaces to prevent file-system crashes on FAT32 players.
 * **Automated Playlist Generation:** Automatically generates `.m3u` playlists structured specifically for the GoGear's root directory (`Music/` and `Playlists/`).
-* **Multithreaded:** Uses GNU `parallel` to utilize all your CPU cores for incredibly fast batch conversions, with a selectable CPU throttle in the UI.
+* **Multithreaded:** Runs conversions on all your CPU cores for incredibly fast batch conversions, with a selectable CPU throttle in the UI.
 * **Cover Art Stripping:** Optional toggle to aggressively strip embedded cover art to save space and prevent firmware lag on low-RAM devices.
 
 ## 🛠️ Prerequisites
@@ -18,7 +18,7 @@ This script relies on standard Linux audio and UI utilities.
 For Debian/Ubuntu/Linux Mint:
 
 ```bash
-sudo apt update && sudo apt install zenity ffmpeg eyed3 parallel
+sudo apt update && sudo apt install zenity ffmpeg eyed3
 
 ```
 
